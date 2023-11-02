@@ -1,0 +1,427 @@
+header
+	position: relative
+.menu 
+	list-style-type: none 
+	display: flex 
+	justify-content: space-between 
+	.menu_link 
+		text-decoration: none 
+		font-weight: 300 
+		font-size: 15px 
+		color: #FFFFFF
+		transition: 1s
+		&:hover
+			color: red
+			font-size: 20px
+	.menu_item 
+		margin-top: 15px
+		border-right: 2px dotted red
+		padding-right: 35px 
+		&:last-child 
+			border-right: none 
+nav 
+	position: fixed
+	min-height: 53px 
+	background: #212121 
+	width: 100% 
+	z-index: 5 
+.subheader 
+	width: 100%
+	position: absolute
+	top: 30px
+	color: White 
+	background-color: rgba(0,0,0, .6) 
+	min-height: 104px 
+	padding-left: 16px
+	padding-top: 20px
+	.phone 
+		display: block 
+		text-decoration: none 
+		text-align: right 
+		color: #FFFFFF 
+	.xs-visible
+		display: none
+	.call_btn 
+		@include blue_button
+		width: 172px 
+		height: 46px 
+		margin-top: 18px 
+		transition: 1s
+		&:hover
+			background: linear-gradient(0deg, $blue_color 0%, #00b1d4 100%) 
+	.call_link 
+		font-weight: 400 
+		font-size: 14px 
+		text-transform: uppercase 
+		color: #FFFFFF 
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21) 
+		text-decoration: none 
+.logo 
+	margin-top: 16px 
+.logo_about 
+	font-weight: 100 
+	font-size: 13px 
+	color: #FFFFFF 
+.call_us 
+	font-weight: 300 
+	font-size: 12px 
+	text-align: right 
+	color: #FFFFFF 
+	margin-top: 20px 
+.invite 
+	min-height: 800px
+	background: url(../bg/uber_bg_1.png) center center/cover no-repeat 
+	padding: 150px 0px 186px 0px 
+	.invite_title 
+		margin-top: 68px
+		font-weight: 900 
+		font-size: 60px 
+		text-align: center 
+		color: #FFFFFF 
+	.invite_subtitle 
+		font-weight: 700 
+		font-size: 36px 
+		line-height: 48px 
+		text-align: center 
+		color: #FFFFFF 
+	.uber_about 
+		font-weight: 400 
+		font-size: 18px 
+		line-height: 24px 
+		color: #FFFFFF 
+		margin: 0 auto 
+		margin-top: 16px 
+		max-width: 985px 
+		text-align: center 
+	.invite_btn 
+		@include blue_button
+		width: 259px 
+		height: 63px 
+		margin: 0 auto 
+		margin-top: 115px
+		transition: 1s 
+		&:hover
+			background: linear-gradient(0deg, $blue_color 0%, #00b1d4 100%) 
+	.invite_link 
+		font-weight: 400 
+		font-size: 18px 
+		line-height: 63px 
+		color: #FFFFFF 
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21) 
+.reasons 
+	min-height: 849px 
+	background-color: white 
+	padding-top: 20px 
+	padding-bottom: 64px 
+	.advantages 
+		@include button
+		padding-top: 4px
+	.reasons_title 
+		@include title
+	.reasons_round 
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		width: 113px 
+		height: 113px 
+		background: $blue_color
+		border-radius: 50% 
+		margin-right: 26px 
+	.reasons_item 
+		display: inline-block 
+		vertical-align: middle 
+	.reasons_block 
+		margin-top: 35px 
+		display: flex 
+		justify-content: center 
+		align-items: flex-start
+	.reasons_descr 
+		display: inline-block 
+		width: 341px 
+		vertical-align: middle 
+		font-weight: 300 
+		font-size: 15px 
+		line-height: 21px 
+		color: #202020 
+		span
+			font-weight: 400 
+			font-size: 17px 
+			color: $blue_color
+.mobile
+	background: url(../bg/mobile_bg_2.png) center center/cover no-repeat 
+	padding: 50px 0 80px 0px
+	min-height: 874px
+	.mobile_btn
+		@include button
+	.mobile_title
+		@include title
+	.mobile_descr
+		@include description
+	.row
+		margin-top: 11px
+
+	.mobile_item
+		position: relative
+		z-index: 0
+		max-width: 320px
+		min-height: 280px
+		padding: 82px 0 0 12px
+		margin-top: 19px
+		&_1
+			background-image: url(../icons/mobile/card1.png)
+		&_2
+			background-image: url(../icons/mobile/card2.png)
+		&_3
+			background-image: url(../icons/mobile/card3.png)
+		&_4
+			background-image: url(../icons/mobile/card4.png)
+		&_5
+			background-image: url(../icons/mobile/card5.png)
+		&_6
+			background-image: url(../icons/mobile/card6.png)
+
+		.mobile_name
+			font-weight: 400
+			font-size: 24px
+			line-height: 31px
+			text-transform: uppercase
+			color: white
+			max-width: 297px
+			text-align: center
+		.mobile_circle
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			border-radius: 100% 
+			top: 218px
+			left: 146px
+			width: 29px
+			height: 29px
+			background: black
+			padding: 7px
+			&:after
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $blue_color
+			&:before
+				content: ''
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				display: block
+				width: 2px
+				height: 14px
+				background-color: $blue_color
+			&:hover
+				&:before, &:after
+					background-color: $red_color
+					transition: 1s
+
+.choice
+	position: relative
+	min-height: 896px
+	padding: 56px 0 136px 0
+	background: url(../bg/mobile_bg_2.png) center center/cover no-repeat 
+	.black_block
+		height: 500px
+		background-color: black
+		position: absolute
+		top: 0px
+		left: 0px
+		width: 100%
+		z-index: 1
+	&_btn
+		position: relative
+		@include button
+		background-color: #fff
+		color: #070716
+		z-index: 2
+	&_title
+		position: relative
+		z-index: 2
+		@include title
+		color: #FFFFFF
+	&_descr
+		position: relative
+		@include description
+		color: white
+		z-index: 2
+	&_img
+		display: block
+		position: relative
+		z-index: 2
+		margin: 0 auto
+		margin-top: 54px
+		max-width: 100%
+	.every_day
+		text-align: center	
+.conditions
+	min-height: 917px
+	padding-top: 68px
+	&_btn
+		@include button
+	&_title
+		@include title
+		margin-bottom: 37px
+	&_subtitle
+		font-weight: 400
+		font-size: 22px
+		line-height: 24px
+		display: flex
+		align-items: center
+		color: $blue_color
+		margin-bottom: 20px
+	.red
+		color: $red_color
+		margin-top: 61px
+	&_descr
+		font-weight: 300
+		font-size: 17px
+		line-height: 24px
+		align-items: center
+		color: $blue_color
+		margin-top: 25px
+	.list .item
+		position: relative
+		font-weight: 300
+		font-size: 17px
+		line-height: 24px
+		display: flex
+		align-items: center
+		text-indent: 50px
+		color: #222222
+		max-width: 528px
+		&::before
+			position: absolute
+			top: 0px
+			left: 13px
+			content: ''
+			display: block
+			height: 21px
+			width: 22px
+			background: url('../icons/blue_submit.png') center center/cover no-repeat
+	.warning .list .item
+		&::before
+			background: url('../icons/red_submit.png') center center/cover no-repeat
+.world
+	background: url('../bg/world_bg_4.png') center center/contain no-repeat
+	background-color: black
+	height: 716px
+	padding: 48px 0px 50px 0px
+	&_btn
+		@include button
+		background-color: white
+		color: #070716
+	&_title
+		@include title
+		color: white
+	&_descr
+		font-weight: 400
+		font-size: 17px
+		line-height: 21px
+		text-align: center
+		color: #FFFFFF
+	&_link
+		display: block
+		font-weight: 400
+		font-size: 15px
+		line-height: 68px
+		text-align: center
+		text-transform: uppercase
+		color: $blue_color
+		text-decoration: none
+		margin: 0 auto
+		margin-top: 456px
+footer
+	height: 155px
+	padding: 12px 0px 40px 0px
+	.footer_divider
+		width: 301px
+		height: 7px
+		background-color: $blue_color
+		margin: 0 auto
+	.footer_main_links
+		display: flex
+		justify-content: center
+		a
+			margin-right: 42px
+			text-decoration: none
+			text-transform: uppercase
+			color: #070716
+			font-weight: 300
+			font-size: 15px
+			transition: 1s
+			&:hover
+				color: $red_color
+				font-size: 17px
+			&:last-child
+				margin-right: 0px
+	.footer_other_links
+		margin-top: 15px
+		display: flex
+		justify-content: center
+		a
+			margin-right: 23px
+			text-decoration: none
+			font-weight: 300
+			font-size: 11px
+			display: flex
+			align-items: center
+			text-transform: uppercase
+			color: #999999
+			transition: 1s
+			&:hover
+				color: $red_color
+				font-size: 13px
+			&:last-child
+				margin-right: 0px
+	.language
+		display: block
+		font-weight: 400
+		font-size: 11px
+		text-align: center
+		text-transform: uppercase
+		color: $blue_color
+		margin: 0 auto
+		margin-top: 17px
+		text-decoration: none
+		transition: 1s
+		&:hover
+			color: $red_color
+			font-size: 13px
+	.footer_download
+		display: flex
+		justify-content: flex-end
+		margin-right: 20px
+		a
+			margin-right: 7px
+	.footer_media
+		display: flex
+		justify-content: flex-start
+		margin-left: 25px	
+	.footer_media .circle
+		border-radius: 100%
+		height: 25px
+		width: 25px
+		background-color: black
+		margin-right: 6px
+		display: flex
+		justify-content: center
+		align-items: center
+		a
+			text-decoration: none
+		span
+			color: white
+			font-size: 14px
+		&:last-child
+			margin-right: 0
+	.footer_wrapper>div
+		min-width: 33%
+	.footer_wrapper
+		display: flex
+		justify-content: space-between
+		align-content: center
+		margin-top: 33px
