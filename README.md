@@ -1,2 +1,2 @@
-# https://diehardy.github.io/SneakersStore/
+# https://diehardy.github.io/Uber/
 Uber site during  the course
